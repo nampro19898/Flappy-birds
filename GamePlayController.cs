@@ -55,7 +55,13 @@ public class GamePlayController : MonoBehaviour {
 		//Application.LoadLevel (Application.loadedLevel);
 	}
 
-	public void _PauseButton(){
+    public void _RestartGameButton2()
+    {
+        Application.LoadLevel("GamePlay2");
+        //Application.LoadLevel (Application.loadedLevel);
+    }
+
+    public void _PauseButton(){
 		Time.timeScale = 0;
 		pausePanel.SetActive (true);
 	}

@@ -12,9 +12,9 @@ public class SpawnerPipe : MonoBehaviour {
 	}
 	
 	IEnumerator Spawner(){
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (2);
 		Vector3 temp = pipeHolder.transform.position;
-		temp.y = Random.Range (-2.5f, 2.5f);
+		temp.y = Random.Range (-2f, 2f);
 		Instantiate (pipeHolder, temp, Quaternion.identity);
 		StartCoroutine (Spawner ());
 	}
